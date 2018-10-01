@@ -37,11 +37,19 @@ html {
 }
 
 .banner {
-  background-image: url("../images/banner.jpg");
+  background:
+    linear-gradient(to top, rgba(16, 52, 41, .8) 5%, rgba(16, 52, 41, 0) 30%) no-repeat center bottom,
+    url("../images/banner.jpg") no-repeat center bottom;
+  background-size: cover;
+  background-clip: inherit;
+  background-position: bottom;
 }
 
 .banner-content {
-  padding-top: 350px;
+  padding-top: 300px;
+  background-image: url("../images/two-leaves.svg");
+  background-size: 100px;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 60em) {
